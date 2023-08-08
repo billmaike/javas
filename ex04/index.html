@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area {
+            background-color: rgb(0, 119, 255);
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        interaja
+    </div>
+
+    <script>
+        /* simplesmente pode colocar a 'var a' em cima de todos */
+
+        function clicar() {
+            var a = document.getElementById('area')
+            a.innerText = 'ola'
+            a.style.backgroundColor = 'blue'
+        }
+        function entrar() {
+            var a = document.getElementById('area')
+            a.innerText = 'entrou'
+            a.style.backgroundColor ='red'
+        }
+        function sair() {
+            var a = document.getElementById('area')
+            a.innerText = 'saiu'
+            a.style.backgroundColor = 'black'
+            a.style.color = 'yellow'
+        }
+
+    </script>
+</body>
+</html>
