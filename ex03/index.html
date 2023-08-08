@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(17, 0, 255);
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>ola bill</h1>
+    <p>aqui o primeiro paragrafo</p>
+    <p>aqui o segundo paragrafo</p>
+    <div id="aqui">clique em min</div>
+
+    <script>
+        document.write('ola mundo')
+        var p1 = document.getElementsByTagName('p')[0]
+        p1.style.color = 'red'
+        var p2 = document.getElementsByTagName('p')[1]
+        p2.style.fontSize = '2em'
+        var corpo = document.body
+        corpo.style.background = 'black'
+     /* var div = document.getElementById('aqui')
+        aqui.style.background = 'red'
+        aqui.innerText = 'mudei' */
+        
+        var div =document.querySelector('div#aqui') 
+        aqui.style.background = 'red'
+        
+    </script>
+    
+</body>
+</html>
