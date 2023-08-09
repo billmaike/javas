@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    velocidade <input type="number" id="ivel">km
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res"></div>
+
+<script>
+    function calcular() {
+        var ivel = document.getElementById('ivel')
+        var vel = Number (ivel.value)
+        var res = document.getElementById('res')
+        res.innerHTML = 'a velocidade é ' + vel
+        if (vel > 60) {
+            res.innerHTML += ' vc ultrapassou'
+        }
+    }
+</script>
+</body>
+</html>
