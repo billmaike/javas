@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+background-color: antiquewhite;
+}
+
+header, h1 {
+text-align: center;
+padding: 10px;
+}
+
+section {
+    width: 500px;
+    margin: auto;
+} 
+
+div#msg {
+font-size: large;
+}
+
+img#imagem {
+    width: 100%;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.473);
+}
+footer, p {
+    text-align: center;
+    padding: 3px;
+    
+}
