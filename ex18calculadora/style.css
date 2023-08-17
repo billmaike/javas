@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  
+    
+}
+body {
+    background-color: black;
+}
+main {
+    width: 100px;
+    height: 100px;
+    margin:auto;
+    padding-top: 100px;
+    padding-right: 10px;
+
+}
+div#q1 {
+    width: 228px;
+    height: 35px;
+    margin: auto;
+
+}
+div#q1 input {
+    width: 224px;
+    height: 30px;
+   
+}
+div {
+    padding: 1px;
+    margin: auto;
+    background-color: rgb(105, 105, 107);
+    width: 228px;
+    height: 23px;
+   
+
+}
+menu {
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    padding: 1.8px;
+    margin: .1px;
+    background-color: rgb(250, 255, 255);
+    border-radius: 3px;
+
+}
