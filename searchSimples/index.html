@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <input id="pesquisa" name="pesquisa" type="search" onkeyup="search()"> 
+    <!-- onkeyup ativa apos soltar cada tecla -->
+
+    <ul>       
+            <li class="animals">gato</li>
+            <li class="animals">cachorro</li>
+            <li class="animals">rato</li>
+            <li class="animals">cavalo</li>
+            <li class="animals">vaca</li>
+            <li class="animals">boi</li>
+            <li class="animals">coelho</li>
+            <li class="animals">girafa</li>
+            <li class="animals">elefante</li>
+            <li class="animals">carneiro</li>
+            <li class="animals">Baleia</li>
+            <li class="animals">golfinho</li>
+            <li class="animals">Tubarao</li>
+            <li class="animals">Foca</li>
+            <li class="animals">Povo</li>
+            <li class="animals">Lula</li>
+            <li class="animals">Leao</li>
+            <li class="animals">Hiena</li>
+            <li class="animals">cobra</li>
+            <li class="animals">iguana</li>
+            <li class="animals">sapo</li>
+            <li class="animals">aguia</li>
+            <li class="animals">pombo</li>
+            <li class="animals">gaivota</li>
+            <li class="animals">falcao</li>
+            <li class="animals">aranha</li>
+        
+    </ul>
+</body>
+<script>
+    function search() {
+        var busca = document.getElementById('pesquisa').value
+
+        busca = busca.toLowerCase()
+
+        var ani = document.getElementsByClassName('animals')
+
+        for (i = 0;   i < ani.length;   i++) {
+            if (ani[i].innerHTML.toLowerCase().includes(busca)) {
+                ani[i].style.display = "list-item"
+                ul.style.display = "none"
+            }else {
+                ani[i].style.display = ""
+                
+            }
+        }
+    }
+
+</script>
+</html>
